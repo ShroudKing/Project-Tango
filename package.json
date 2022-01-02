@@ -1,0 +1,14 @@
+{
+  "name": "project-tango",
+  "version": "1.0.0",
+  "description": "A new world",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

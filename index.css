@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+#my-mark {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    justify-content: end;
+    height: 30px;
+    width: 200px;
+}
+
+#my-mark > h4 {
+    display: block;
+    margin: auto 0;
+    margin-right: 16px;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 300;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+#my-mark > div {
+    margin: auto 0;
+    height: 2px;
+    width: 80px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width: 1000px) {
+    .module1 {
+        height: 70%;
+        width: 100% !important;
+        min-width: unset !important;
+        margin: 0 auto;
+    }
+}
+
+.module1 {
+    margin: 0 auto;
+    margin-top: 120px;
+    height: 70%;
+    width: 60%;
+    min-width: 1000px;
+}
+
+.breaker {
+    margin: 0 auto;
+    height: 14px;
+    width: 97%;
+}
+
+.breaker > .breaker-left, .breaker > .breaker-right {
+    float: left;
+    height: 100%;
+    width: 44px;
+}
+
+.breaker > .breaker-center {
+    float: left;
+    height: 2px;
+    width: calc(100% - 44px * 2);
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.breaker .breaker-vertical {
+    float: left;
+    height: 100%;
+    width: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.breaker .breaker-horizontal {
+    float: left;
+    height: 3px;
+    width: calc(100% - 3px);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.top {
+    margin-top: 5px;
+    height: 42px;
+    width: 100%;
+    background-color: rgba(204, 204, 255, 0.05);
+}
+
+.top .left, .top .right {
+    display: grid;
+    align-content: space-between;
+    float: left;
+    height: 100%;
+    width: 11px;
+}
+
+.top .center {
+    float: left;
+    height: 100%;
+    width: calc(100% - 11px * 2);
+}
+
+.top .center > .border {
+    height: 2px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.top .center > .content {
+    display: flex;
+    padding: 0 30px;
+    height: calc(100% - 2px);
+    width: 100%;
+}
+
+.top .center > .content > span {
+    margin: auto 12px auto 0;
+    color: rgba(255, 255, 255,0.25);
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-transform: uppercase;
+}
+
+.top .center > .content > span:nth-child(2) {
+    color: rgba(255, 255, 255,0.10);
+}
+
+.top .large {
+    height: 11px;
+    width: 11px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.top .small {
+    height: 4px;
+}
+
+.top .small > div {
+    height: 100%;
+    width: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.top .right > .small > div {
+    float: right;
+}
