@@ -239,7 +239,6 @@ body {
     height: auto;
     width: 100%;
 }
-
 .six > div {
     display: flex;
     float: left;
@@ -248,31 +247,47 @@ body {
 }
 
 .six > div:nth-child(odd) {
-    background-color: cadetblue;
+    background-color: rgba(204, 204, 255, 0.2);
 }
 
 .six > div:nth-child(even) {
-    background-color: olive;
+    background-color: rgba(204, 204, 255, 0.1);
 }
 
 .six > div > div {
+    display: flex;
     float: left;
+    align-items: center;
+}
+
+.six > div > div > span {
+    margin-left: 30px;
 }
 
 .six > div > div:nth-child(1) {
-    width: 100px;
-    background-color: orange;
-    opacity: 0.25;
+    width: 200px;
+}
+
+.six > div > div:nth-child(1) > span {
+    margin: 0 auto;
 }
 
 .six > div > div:nth-child(2) {
-    width: 250px;
-    background-color: palegoldenrod;
-    opacity: 0.25;
+    width: 100%;
 }
 
 .six > div > div:nth-child(3) {
-    width: 100%;
-    background-color: pink;
-    opacity: 0.25;
+    width: 200px;
+}
+
+.six > div > div:nth-child(4) {
+    width: 200px;
+}
+
+.six > div > div > span {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-transform: uppercase;
 }
