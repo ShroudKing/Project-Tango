@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: end;
     height: 30px;
-    width: 200px;
+    width: 150px;
 }
 
 #my-mark > h4 {
@@ -50,47 +50,104 @@ body {
     min-width: 1000px;
 }
 
-.breaker {
+.one {
+    display: flex;
+    margin: 0 auto 50px auto;
+    height: 100px;
+    width: 100%;
+}
+
+.one > span {
+    margin: auto 20px auto 0;
+    color: rgba(103, 173, 198, 0.4);
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-transform: uppercase;
+}
+
+.one > button {
+    display: block;
+    margin: auto 0;
+    height: 42px;
+    padding: 0 25px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: solid;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.two {
+    display: flex;
+    margin: 0 auto 4px auto;
+    height: 30px;
+    width: 94%;
+}
+
+.two > span {
+    margin: auto 12px auto 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-transform: uppercase;
+}
+
+.two > span:nth-child(1) {
+    color: rgba(163, 198, 103, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.two > span:nth-child(2) {
+    color: rgba(255, 255, 255,0.5);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.three {
     margin: 0 auto;
     height: 14px;
     width: 97%;
 }
 
-.breaker > .breaker-left, .breaker > .breaker-right {
+.three > .left, .three > .right {
     float: left;
     height: 100%;
     width: 44px;
 }
 
-.breaker > .breaker-center {
+.three > .center {
     float: left;
     height: 2px;
     width: calc(100% - 44px * 2);
     background-color: rgba(255, 255, 255, 0.075);
 }
 
-.breaker .breaker-vertical {
+.three .vertical {
     float: left;
     height: 100%;
     width: 3px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-.breaker .breaker-horizontal {
+.three .horizontal {
     float: left;
     height: 3px;
     width: calc(100% - 3px);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-.top {
+.four {
     margin-top: 5px;
     height: 42px;
     width: 100%;
-    background-color: rgba(204, 204, 255, 0.05);
+    background-color: rgba(204, 204, 255, 0.075);
 }
 
-.top .left, .top .right {
+.four .left, .four .right {
     display: grid;
     align-content: space-between;
     float: left;
@@ -98,54 +155,124 @@ body {
     width: 11px;
 }
 
-.top .center {
+.four .center {
     float: left;
     height: 100%;
     width: calc(100% - 11px * 2);
 }
 
-.top .center > .border {
+.four .center > .border {
     height: 2px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.075);
 }
 
-.top .center > .content {
+.four .center > .content {
     display: flex;
     padding: 0 30px;
     height: calc(100% - 2px);
     width: 100%;
 }
 
-.top .center > .content > span {
+.four .center > .content > span {
     margin: auto 12px auto 0;
-    color: rgba(255, 255, 255,0.25);
-    font-size: 17px;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 15px;
     font-weight: 400;
     font-family: 'Bai Jamjuree', sans-serif;
     text-transform: uppercase;
 }
 
-.top .center > .content > span:nth-child(2) {
-    color: rgba(255, 255, 255,0.10);
+.four .center > .content > span:nth-child(2) {
+    color: rgba(255, 255, 255, 0.3);
 }
 
-.top .large {
+.four .large {
     height: 11px;
     width: 11px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-.top .small {
+.four .small {
     height: 4px;
 }
 
-.top .small > div {
+.four .small > div {
     height: 100%;
     width: 4px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-.top .right > .small > div {
+.four .right > .small > div {
     float: right;
+}
+
+.five {
+    display: flex;
+    margin-top: 3px;
+    height: 36px;
+    width: 100%;
+}
+
+.five > div:nth-child(1) {
+    margin-right: 3px;
+    height: 100%;
+    width: 50px;
+    background-color: rgba(108, 125, 179, 0.56);
+}
+
+.five > div:nth-child(2) {
+    margin-right: 3px;
+    height: 100%;
+    width: 36px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.five > div:nth-child(3) {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(80, 176, 255, 0.62);
+}
+
+.six {
+    margin-top: 3px;
+    height: auto;
+    width: 100%;
+}
+
+.six > div {
+    display: flex;
+    float: left;
+    height: 34px;
+    width: 100%;
+}
+
+.six > div:nth-child(odd) {
+    background-color: cadetblue;
+}
+
+.six > div:nth-child(even) {
+    background-color: olive;
+}
+
+.six > div > div {
+    float: left;
+}
+
+.six > div > div:nth-child(1) {
+    width: 100px;
+    background-color: orange;
+    opacity: 0.25;
+}
+
+.six > div > div:nth-child(2) {
+    width: 250px;
+    background-color: palegoldenrod;
+    opacity: 0.25;
+}
+
+.six > div > div:nth-child(3) {
+    width: 100%;
+    background-color: pink;
+    opacity: 0.25;
 }
