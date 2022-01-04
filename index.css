@@ -242,16 +242,26 @@ body {
 .six > div {
     display: flex;
     float: left;
-    height: 34px;
+    height: 30px;
     width: 100%;
 }
 
 .six > div:nth-child(odd) {
     background-color: rgba(204, 204, 255, 0.2);
+    transform: translateX(-5px);
+}
+
+.six > div:nth-child(odd) > div > span {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .six > div:nth-child(even) {
     background-color: rgba(204, 204, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.six > div:nth-child(even) > div > span {
+    color: rgba(255, 255, 255, 0.45);
 }
 
 .six > div > div {
@@ -285,8 +295,7 @@ body {
 }
 
 .six > div > div > span {
-    color: rgba(255, 255, 255, 0.2);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     font-family: 'Bai Jamjuree', sans-serif;
     text-transform: uppercase;
