@@ -69,11 +69,11 @@ body {
 .one > button {
     display: block;
     margin: auto 0;
-    height: 42px;
-    padding: 0 25px;
+    height: 40px;
+    padding: 0 35px;
     color: black;
     background-color: rgba(255, 255, 255, 0.75);
-    border: solid;
+    border: none;
     border-radius: 10px;
     font-size: 13px;
     font-weight: 500;
@@ -240,6 +240,9 @@ body {
     width: 100%;
 }
 .six > div {
+    margin-bottom: 2px;
+    border-radius: 5px;
+    transition: 0.25s;
     display: flex;
     float: left;
     height: 30px;
@@ -248,7 +251,12 @@ body {
 
 .six > div:nth-child(odd) {
     background-color: rgba(204, 204, 255, 0.2);
-    transform: translateX(-5px);
+    transform: translateX(-3px);
+}
+
+.six > div:nth-child(odd):hover {
+    background-color: rgba(108, 125, 179, 0.56);
+    transform: translateX(-10px);
 }
 
 .six > div:nth-child(odd) > div > span {
@@ -257,7 +265,12 @@ body {
 
 .six > div:nth-child(even) {
     background-color: rgba(204, 204, 255, 0.1);
-    transform: translateX(5px);
+    transform: translateX(3px);
+}
+
+.six > div:nth-child(even):hover {
+    background-color: rgba(108, 125, 179, 0.56);
+    transform: translateX(10px);
 }
 
 .six > div:nth-child(even) > div > span {
