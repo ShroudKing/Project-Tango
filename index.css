@@ -8,7 +8,7 @@ body {
 }
 
 #my-mark {
-    position: absolute;
+    position: fixed;
     bottom: 10px;
     right: 20px;
     display: flex;
@@ -70,7 +70,7 @@ body {
     display: block;
     margin: auto 0;
     height: 40px;
-    padding: 0 35px;
+    padding: 0 40px;
     color: black;
     background-color: rgba(255, 255, 255, 0.75);
     border: none;
@@ -142,7 +142,7 @@ body {
 
 .four {
     margin-top: 5px;
-    height: 42px;
+    height: 38px;
     width: 100%;
     background-color: rgba(204, 204, 255, 0.075);
 }
@@ -177,7 +177,7 @@ body {
 .four .center > .content > span {
     margin: auto 12px auto 0;
     color: rgba(255, 255, 255, 0.45);
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     font-family: 'Bai Jamjuree', sans-serif;
     text-transform: uppercase;
@@ -234,12 +234,12 @@ body {
     background-color: rgba(80, 176, 255, 0.62);
 }
 
-.six {
+#six {
     margin-top: 3px;
     height: auto;
     width: 100%;
 }
-.six > div {
+#six > div {
     margin-bottom: 2px;
     border-radius: 5px;
     transition: 0.25s;
@@ -249,66 +249,80 @@ body {
     width: 100%;
 }
 
-.six > div:nth-child(odd) {
-    background-color: rgba(204, 204, 255, 0.2);
+#six > div:nth-child(1) {
+    background-color: rgba(204, 204, 255, 0.1) !important;
+}
+
+#six > div:nth-child(1) > div > span {
+    color: rgba(255, 255, 255, 0.3) !important;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#six > div:nth-child(1n + 2):hover > div > span {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+#six > div:nth-child(2n+3) {
+    background-color: rgba(204, 204, 255, 0.08);
     transform: translateX(-3px);
 }
 
-.six > div:nth-child(odd):hover {
-    background-color: rgba(108, 125, 179, 0.56);
+#six > div:nth-child(2n+3):hover {
+    background-color: rgba(204, 204, 255, 0.16);
     transform: translateX(-10px);
 }
 
-.six > div:nth-child(odd) > div > span {
-    color: rgba(255, 255, 255, 0.3);
+#six > div:nth-child(odd) > div > span {
+    color: rgba(255, 255, 255, 0.15);
 }
 
-.six > div:nth-child(even) {
-    background-color: rgba(204, 204, 255, 0.1);
+#six > div:nth-child(2n) {
+    background-color: rgba(204, 204, 255, 0.06);
     transform: translateX(3px);
 }
 
-.six > div:nth-child(even):hover {
-    background-color: rgba(108, 125, 179, 0.56);
+#six > div:nth-child(2n):hover {
+    background-color: rgba(204, 204, 255, 0.16);
     transform: translateX(10px);
 }
 
-.six > div:nth-child(even) > div > span {
-    color: rgba(255, 255, 255, 0.45);
+#six > div:nth-child(even) > div > span {
+    color: rgba(255, 255, 255, 0.15);
 }
 
-.six > div > div {
+#six > div > div {
     display: flex;
     float: left;
     align-items: center;
 }
 
-.six > div > div > span {
+#six > div > div > span {
     margin-left: 30px;
 }
 
-.six > div > div:nth-child(1) {
+#six > div > div:nth-child(1) {
     width: 200px;
 }
 
-.six > div > div:nth-child(1) > span {
+#six > div > div:nth-child(1) > span {
     margin: 0 auto;
 }
 
-.six > div > div:nth-child(2) {
+#six > div > div:nth-child(2) {
     width: 100%;
 }
 
-.six > div > div:nth-child(3) {
+#six > div > div:nth-child(3) {
     width: 200px;
 }
 
-.six > div > div:nth-child(4) {
+#six > div > div:nth-child(4) {
     width: 200px;
 }
 
-.six > div > div > span {
-    font-size: 14px;
+#six > div > div > span {
+    font-size: 13px;
     font-weight: 400;
     font-family: 'Bai Jamjuree', sans-serif;
     text-transform: uppercase;
